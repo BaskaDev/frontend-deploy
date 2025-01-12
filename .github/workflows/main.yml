@@ -33,13 +33,14 @@ jobs:
       - name: Build app bundle
         run: npm run build -- --configuration production
 
-      
+      - name: Rename index for routing
+        run: mv dist/browser/index.html dist/browser/404.html
 
       # Step 5: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           
-          build_dir: dist/frontend-deploy/browser
+          build_dir: dist/frontend-deploy
         env: 
           github_token: ${{ secrets.GITHUB_TOKEN }}
