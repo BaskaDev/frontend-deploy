@@ -40,7 +40,7 @@ jobs:
         #Deploy to pages
         uses: kimmy-wang/gitee-pages@v1.0.0
         with: 
-          build_dir: dist/
+          build_dir: dist/frontend-deploy
         env:
           GIT_HUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
         
