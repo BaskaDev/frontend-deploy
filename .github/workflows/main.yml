@@ -34,7 +34,7 @@ jobs:
         run: npm run build -- --configuration production
 
       - name: Rename index for routing
-        run: mv dist/frontend-app/index.html dist/frontend-app/404.html
+        run: mv dist/frontend-deploy/index.html dist/frontend-deploy/404.html
 
       # Step 5: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
