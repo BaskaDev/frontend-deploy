@@ -33,22 +33,23 @@
           "configurations": {
             "production": {
               "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "1mb", 
-                  "maximumError": "2mb"
-                },
-                {
-                  "type": "allScripts",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
-                },
-                {
-                  "type": "all",
-                  "maximumWarning": "2mb",
-                  "maximumError": "5mb"
-                }
-              ],
+  {
+    "type": "initial",
+    "maximumWarning": "1mb", 
+    "maximumError": "2mb"
+  },
+  {
+    "type": "anyScript",
+    "maximumWarning": "500kb",
+    "maximumError": "1mb"
+  },
+  {
+    "type": "all",
+    "maximumWarning": "2mb",
+    "maximumError": "5mb"
+  }
+]
+,
               "outputHashing": "all"
             },
             "development": {
